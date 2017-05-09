@@ -6,7 +6,7 @@ module KafkaRest
     DEFAULT_URL = 'http://localhost:8080'.freeze
     BROKERS_PATH = '/brokers'.freeze
     TOPICS_PATH = '/topics'.freeze
-    CONTENT_JSON = 'application/vnd.kafka.binary.v1+json'.freeze
+    CONTENT_JSON = 'application/vnd.kafka.json.v1+json'.freeze
 
     attr_reader :url, :brokers, :topics, :consumers
 
