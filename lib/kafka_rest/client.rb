@@ -45,7 +45,7 @@ module KafkaRest
       Net::HTTP.start(uri.host, uri.port) do |http|
         req = verb.new(uri)
         req['User-Agent'.freeze] = user_agent
-        req['Accept'.freeze] = CONTENT_JSON
+        #req['Accept'.freeze] = CONTENT_JSON
 
         unless verb.is_a? Net::HTTP::Post
           req['Content-Type'.freeze] = schema ? schema.content_type : CONTENT_JSON
